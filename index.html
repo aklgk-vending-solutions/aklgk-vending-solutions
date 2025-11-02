@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AK & LGK Vending Solutions – Automaten neu gedacht</title>
+  <meta name="description" content="Individuelle Lösungen für Kaffee-, Snack- und Getränkeautomaten: Planung, Finanzierung, Betrieb & Service. AK & LGK Vending Solutions." />
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" type="image/png" href="/img/ak-lgk-favicon.png" />
+  <meta property="og:title" content="AK & LGK Vending Solutions" />
+  <meta property="og:description" content="Professionelle Automatenlösungen – von Heiß- & Kaltgetränken bis Snack & Kombi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/img/AK%20&%20LGK%20Vending%20solutions.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT:'#0F172A', accent:'#22C55E' } },
+          boxShadow: { soft:'0 10px 30px rgba(2,12,27,0.08)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-in { animation: fade .6s ease-out both; }
+    @keyframes fade { from {opacity:0; transform:translateY(8px);} to {opacity:1; transform:none;} }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.65); }
+    .dark .glass { background: rgba(2,6,23,.65); }
+    .btn { @apply px-5 py-3 rounded-lg font-semibold transition; }
+  </style>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"AK & LGK Vending Solutions",
+    "url":"https://example.com",
+    "logo":"https://example.com/img/AK%20&%20LGK%20Vending%20solutions.jpg",
+    "sameAs":[]
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50">
+    <div class="glass border-b border-slate-200/60 dark:border-slate-800/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3" aria-label="Startseite">
+          <img
+            src="/img/AK%20&%20LGK%20Vending%20solutions.jpg"
+            alt="AK & LGK Vending Solutions"
+            class="h-9 w-auto md:h-10 select-none"
+            loading="eager" decoding="async"
+          />
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#automaten" class="hover:text-brand-accent">Automaten</a>
+          <a href="#dienstleistungen" class="hover:text-brand-accent">Dienstleistungen</a>
+          <a href="#kontakt" class="hover:text-brand-accent">Kontakt</a>
+          <button id="themeBtn" class="px-3 py-1.5 rounded border border-slate-300/60 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Dark Mode umschalten">Dark</button>
+        </nav>
+
+        <!-- Mobile trigger -->
+        <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Menü">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200/60 dark:border-slate-800/60 px-4 pb-4">
+        <a href="#automaten" class="block py-2">Automaten</a>
+        <a href="#dienstleistungen" class="block py-2">Dienstleistungen</a>
+        <a href="#kontakt" class="block py-2">Kontakt</a>
+        <button id="themeBtnM" class="mt-2 w-full px-3 py-2 rounded border border-slate-300/60 dark:border-slate-700" aria-label="Dark Mode umschalten (mobil)">Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-30 dark:opacity-20"
+      style="background: radial-gradient(600px 300px at 20% 10%, #22C55E33, transparent),
+                     radial-gradient(600px 300px at 80% 0%, #38BDF833, transparent)"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="fade-in">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            Automaten neu gedacht.
+          </h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+            Heiß- & Kaltgetränke, Snack & Kombi – präzise geplant, sauber finanziert, zuverlässig betrieben.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#automaten" class="btn bg-brand-accent text-white shadow-soft hover:opacity-90">Automaten entdecken</a>
+            <a href="#kontakt" class="btn border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Beratung anfragen</a>
+          </div>
+          <div class="mt-5 text-sm text-slate-500 dark:text-slate-400">Kauf · Leasing · Miete · Operator-Modell</div>
+        </div>
+
+        <div class="fade-in md:delay-150">
+          <figure class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop"
+                 alt="Vending Automat"
+                 class="w-full h-[380px] object-cover" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automaten (Platz für späteren Filter/DB) -->
+  <section id="automaten" class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+      <div>
+        <h2 class="text-3xl font-bold">Unsere Automaten</h2>
+        <p class="text-slate-600 dark:text-slate-300">
+          Übersicht folgt: Filter, Bilder, Konfigurationen & Preise (Datenbankintegration).
+        </p>
+      </div>
+      <!-- Mini-Filter (Dummy – API/DB kann hier später angeschlossen werden) -->
+      <div class="flex flex-wrap items-center gap-2">
+        <select class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700">
+          <option>Kategorie</option><option>Heißgetränke</option><option>Kaltgetränke</option><option>Snack</option><option>Kombi</option><option>Tischgerät</option>
+        </select>
+        <select class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700">
+          <option>Indoor/Outdoor</option><option>indoor</option><option>outdoor</option>
+        </select>
+        <select class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700">
+          <option>Bedienfeld</option><option>Keypad</option><option>Touch 7"</option><option>Touch 13.3"</option>
+        </select>
+        <button class="px-4 py-2 rounded bg-brand-accent text-white">Anwenden</button>
+      </div>
+    </div>
+
+    <!-- Skeleton Cards (werden später durch echte Daten ersetzt) -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+        <div class="h-44 bg-slate-200 dark:bg-slate-800 rounded animate-pulse mb-4"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3 mb-2"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/2"></div>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+        <div class="h-44 bg-slate-200 dark:bg-slate-800 rounded animate-pulse mb-4"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3 mb-2"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/2"></div>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+        <div class="h-44 bg-slate-200 dark:bg-slate-800 rounded animate-pulse mb-4"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3 mb-2"></div>
+        <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/2"></div>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="#kontakt" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">
+        Individuelle Empfehlung anfordern
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M13 5.828L17.172 10H4v2h13.172L13 16.172L14.414 17.586L21 11l-6.586-6.586z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Dienstleistungen -->
+  <section id="dienstleistungen" class="bg-slate-100 dark:bg-slate-900 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">Unsere Dienstleistungen</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="p-6 rounded-xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-soft">
+          <h3 class="font-semibold text-lg">Beratung & Planung</h3>
+          <p class="text-slate-600 dark:text-slate-300 mt-2">Standortanalyse, Medien-Check, Konfiguration, Branding.</p>
+        </article>
+        <article class="p-6 rounded-xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-soft">
+          <h3 class="font-semibold text-lg">Finanzierung & Betrieb</h3>
+          <p class="text-slate-600 dark:text-slate-300 mt-2">Kauf, Leasing, Miete, Operator – transparent & planbar.</p>
+        </article>
+        <article class="p-6 rounded-xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-soft">
+          <h3 class="font-semibold text-lg">Service & Support</h3>
+          <p class="text-slate-600 dark:text-slate-300 mt-2">Aufstellung, Wartung, Fernüberwachung, Cashless-Zahlung.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="bg-white dark:bg-slate-950 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Kontakt aufnehmen</h2>
+      <form class="grid gap-4 bg-slate-50 dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-soft" onsubmit="event.preventDefault(); alert('Danke für Ihre Anfrage!');">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Name" required class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700" />
+          <input type="email" placeholder="E-Mail" required class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700" />
+        </div>
+        <input type="text" placeholder="Firma / Standort (optional)" class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700" />
+        <textarea rows="5" placeholder="Ihre Nachricht..." class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700"></textarea>
+        <button class="mt-2 px-5 py-3 rounded-lg bg-brand-accent text-white font-semibold hover:opacity-90">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-10 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>© <span id="y"></span> AK & LGK Vending Solutions</div>
+      <nav class="flex gap-6">
+        <a href="#" class="hover:text-brand-accent">Impressum</a>
+        <a href="#" class="hover:text-brand-accent">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Minimal JS (ohne Abhängigkeiten) -->
+  <script>
+    // Theme Toggle (persist optional)
+    const themeBtn = document.getElementById('themeBtn');
+    const themeBtnM = document.getElementById('themeBtnM');
+    const toggleTheme = () => {
+      const r = document.documentElement;
+      r.classList.toggle('dark');
+      localStorage.setItem('theme', r.classList.contains('dark') ? 'dark' : 'light');
+    };
+    [themeBtn, themeBtnM].forEach(b => b && b.addEventListener('click', toggleTheme));
+    if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+
+    // Mobile Menu
+    document.getElementById('menuBtn').addEventListener('click', () =>
+      document.getElementById('mobileMenu').classList.toggle('hidden')
+    );
+
+    // Jahr
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
