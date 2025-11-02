@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AK & LGK Vending Solutions – Automaten neu gedacht</title>
   <meta name="description" content="Individuelle Lösungen für Kaffee-, Snack- und Getränkeautomaten: Planung, Finanzierung, Betrieb & Service. AK & LGK Vending Solutions." />
-  <meta name="theme-color" content="#0F172A">
-  <link rel="icon" type="image/png" href="/img/ak-lgk-favicon.png" />
+  <meta name="theme-color" content="#0F172A" />
+  <!-- Favicon (optional, falls vorhanden) -->
+  <link rel="icon" type="image/png" href="img/ak-lgk-favicon.png" />
+  <!-- Open Graph Bild -->
   <meta property="og:title" content="AK & LGK Vending Solutions" />
-  <meta property="og:description" content="Professionelle Automatenlösungen – von Heiß- & Kaltgetränken bis Snack & Kombi." />
+  <meta property="og:description" content="Professionelle Automatenlösungen – Heiß- & Kaltgetränke, Snack & Kombi." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/img/AK%20&%20LGK%20Vending%20solutions.jpg" />
+  <meta property="og:image" content="img/ak-lgk-logo.jpg" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -27,17 +30,16 @@
     @keyframes fade { from {opacity:0; transform:translateY(8px);} to {opacity:1; transform:none;} }
     .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.65); }
     .dark .glass { background: rgba(2,6,23,.65); }
-    .btn { @apply px-5 py-3 rounded-lg font-semibold transition; }
   </style>
 
-  <!-- JSON-LD: Organization -->
+  <!-- JSON-LD: Organization (optional; URL später anpassen) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"AK & LGK Vending Solutions",
-    "url":"https://example.com",
-    "logo":"https://example.com/img/AK%20&%20LGK%20Vending%20solutions.jpg",
+    "url":"https://USERNAME.github.io/REPO",
+    "logo":"https://USERNAME.github.io/REPO/img/ak-lgk-logo.jpg",
     "sameAs":[]
   }
   </script>
@@ -49,12 +51,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <!-- Logo -->
         <a href="#home" class="flex items-center gap-3" aria-label="Startseite">
-          <img
-            src="/img/AK%20&%20LGK%20Vending%20solutions.jpg"
-            alt="AK & LGK Vending Solutions"
-            class="h-9 w-auto md:h-10 select-none"
-            loading="eager" decoding="async"
-          />
+          <img src="img/ak-lgk-logo.jpg" alt="AK & LGK Vending Solutions" class="h-9 w-auto md:h-10 select-none" loading="eager" decoding="async" />
         </a>
 
         <!-- Desktop Nav -->
@@ -76,7 +73,7 @@
         <a href="#automaten" class="block py-2">Automaten</a>
         <a href="#dienstleistungen" class="block py-2">Dienstleistungen</a>
         <a href="#kontakt" class="block py-2">Kontakt</a>
-        <button id="themeBtnM" class="mt-2 w-full px-3 py-2 rounded border border-slate-300/60 dark:border-slate-700" aria-label="Dark Mode umschalten (mobil)">Dark</button>
+        <button id="themeBtnM" class="mt-2 w-full px-3 py-2 rounded border border-slate-300/60 dark:border-slate-700">Dark</button>
       </div>
     </div>
   </header>
@@ -90,15 +87,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
       <div class="grid md:grid-cols-2 gap-10 items-center">
         <div class="fade-in">
-          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-            Automaten neu gedacht.
-          </h1>
-          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
-            Heiß- & Kaltgetränke, Snack & Kombi – präzise geplant, sauber finanziert, zuverlässig betrieben.
-          </p>
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Automaten neu gedacht.</h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Heiß- & Kaltgetränke, Snack & Kombi – präzise geplant, sauber finanziert, zuverlässig betrieben.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#automaten" class="btn bg-brand-accent text-white shadow-soft hover:opacity-90">Automaten entdecken</a>
-            <a href="#kontakt" class="btn border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Beratung anfragen</a>
+            <a href="#automaten" class="px-5 py-3 rounded-lg bg-brand-accent text-white font-semibold shadow-soft hover:opacity-90">Automaten entdecken</a>
+            <a href="#kontakt" class="px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Beratung anfragen</a>
           </div>
           <div class="mt-5 text-sm text-slate-500 dark:text-slate-400">Kauf · Leasing · Miete · Operator-Modell</div>
         </div>
@@ -106,8 +99,7 @@
         <div class="fade-in md:delay-150">
           <figure class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-soft">
             <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop"
-                 alt="Vending Automat"
-                 class="w-full h-[380px] object-cover" loading="lazy" decoding="async">
+                 alt="Vending Automat" class="w-full h-[380px] object-cover" loading="lazy" decoding="async">
           </figure>
         </div>
       </div>
@@ -119,11 +111,9 @@
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
       <div>
         <h2 class="text-3xl font-bold">Unsere Automaten</h2>
-        <p class="text-slate-600 dark:text-slate-300">
-          Übersicht folgt: Filter, Bilder, Konfigurationen & Preise (Datenbankintegration).
-        </p>
+        <p class="text-slate-600 dark:text-slate-300">Übersicht folgt: Filter, Bilder, Konfigurationen & Preise (Datenbankintegration).</p>
       </div>
-      <!-- Mini-Filter (Dummy – API/DB kann hier später angeschlossen werden) -->
+      <!-- Mini-Filter (Dummy – später echte API) -->
       <div class="flex flex-wrap items-center gap-2">
         <select class="border rounded px-3 py-2 bg-white dark:bg-slate-900 dark:border-slate-700">
           <option>Kategorie</option><option>Heißgetränke</option><option>Kaltgetränke</option><option>Snack</option><option>Kombi</option><option>Tischgerät</option>
@@ -138,7 +128,7 @@
       </div>
     </div>
 
-    <!-- Skeleton Cards (werden später durch echte Daten ersetzt) -->
+    <!-- Skeleton Cards -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
         <div class="h-44 bg-slate-200 dark:bg-slate-800 rounded animate-pulse mb-4"></div>
@@ -213,17 +203,16 @@
     </div>
   </footer>
 
-  <!-- Minimal JS (ohne Abhängigkeiten) -->
+  <!-- Minimal JS -->
   <script>
-    // Theme Toggle (persist optional)
-    const themeBtn = document.getElementById('themeBtn');
-    const themeBtnM = document.getElementById('themeBtnM');
+    // Theme Toggle mit Persistenz
     const toggleTheme = () => {
       const r = document.documentElement;
       r.classList.toggle('dark');
       localStorage.setItem('theme', r.classList.contains('dark') ? 'dark' : 'light');
     };
-    [themeBtn, themeBtnM].forEach(b => b && b.addEventListener('click', toggleTheme));
+    document.getElementById('themeBtn').addEventListener('click', toggleTheme);
+    document.getElementById('themeBtnM').addEventListener('click', toggleTheme);
     if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
 
     // Mobile Menu
